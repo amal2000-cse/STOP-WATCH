@@ -20,7 +20,7 @@ function stopWatch() {
     let sec=(second<10) ? "0"+second : second;
 
  
-    display.innerHTML=hrs+": "+min+": "+sec;
+    display.innerHTML=hrs+":"+min+":"+sec;
 }
 //in this function setInterval will call the function stopWatch every 1000 milliseconds
 function start(){
@@ -41,5 +41,5 @@ function reset(){
     clearInterval(timer);
     timer=null;
     [second, minute, hour] = [0, 0, 0];
-    display.innerHTML="00: 00: 00";
+    display.innerHTML="00:00:00";
 }
